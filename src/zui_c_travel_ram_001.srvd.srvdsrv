@@ -1,0 +1,9 @@
+@EndUserText.label: 'Travel service definition'
+define service ZUI_C_TRAVEL_RAM_001 {
+  expose ZC_TRAVEL_RAM_001 as TravelProcessor;
+  expose /DMO/I_Customer as Passenger;
+  expose /DMO/I_Agency as TravelAgency;
+  expose /DMO/I_Airport as Airport;
+  expose I_Currency as Currency;
+  expose I_Country as Country;
+}
