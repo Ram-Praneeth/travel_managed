@@ -20,7 +20,8 @@ define root view entity ZC_TRAVEL_RAM_001
 
 
       @UI: {
-          lineItem:       [ { position: 10, importance: #HIGH } ],
+          lineItem:       [ { position: 10, importance: #HIGH },
+                             { type: #FOR_ACTION, dataAction: 'business',label: 'Business'  } ],
           identification: [ { position: 10, label: 'Travel ID [1,...,99999999]' } ] }
       @Search.defaultSearchElement: true
       travel_id          as TravelID,

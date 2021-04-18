@@ -30,7 +30,7 @@ CLASS zcl_generate_travel_ram_001 IMPLEMENTATION.
     DELETE FROM ztravel_ram_001.
 
 *   insert the new table entries
-    INSERT ztravel_ram_001 FROM TABLE @itab.
+*    INSERT ztravel_ram_001 FROM TABLE @itab.
 
 *   output the result as a console message
     out->write( |{ sy-dbcnt } travel entries inserted successfully!| ).
